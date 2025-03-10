@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir = "rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+       body {
+        font-size: 20px;
+         background-color: rgb(0, 0, 0);
+         margin: 0;
+         font-family: Arial, sans-serif;
+       }
+      .Fdata{
+        background-color: rgb(214, 8, 8);
+        color: white;
+        padding: 7px;
+        margin: 20px;
+        text-align: center;
+        text-shadow: 30px;
+        border: #e1370c;
+        
+      }
+       header {
+        font-size: 25px;
+         background-color: rgb(150, 54, 54);
+         color: white;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 10px 20px;
+       }
+
+       header img {
+         height: 80px;
+         border-radius: 100px;
+         width: 80px;
+         margin-bottom: 0rem;
+       }
+
+       .FPersnolInfo,
+       .FStudyInfo,
+       div {
+         background-color:rgb(255, 255, 255);
+         padding: 20px;
+         margin: 10px;
+         border-radius: 8px;
+       }
+
+       label {
+        margin: 20px;
+         display: inline-block;
+         width: 150px;
+         margin-bottom: 10px;
+         font-size: 25px;
+       }
+
+       input {
+        font-size: 20px;
+         padding: 5px;
+         margin-bottom: 10px;
+         width: 300px;
+         background-color: rgb(114, 115, 149);
+         border-radius: 15px;
+         box-shadow: 100px;
+       }
+
+       footer {
+         background-color:rgb(150, 54, 54);
+         color: rgb(29, 27, 27);
+         text-align: center;
+         padding: 10px;
+       }
+      
+
+       a {
+         display: block;
+         text-align: center;
+         margin-top: 20px;
+         color: rgb(255, 255, 255);
+         text-decoration: none;
+       }
+
+       a:hover {
+         text-decoration: underline;
+       }
+
+       button {
+         margin-top: 10px;  
+         font-size: 20px;
+         padding:10px 10px;
+         background-color: rgb(0, 0, 0);
+         color: white;
+         border: solid;
+         border-radius: 20px;
+         cursor: pointer;
+         transition: background-color 0.3s ease-in-out;
+       }
+       button:hover {
+        background-color: #e1370c;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="icon1.jpeg" alt="Logo Left" />
+      <h1>كلية الحاسوب وتكنولوجيا المعلومات _ جامعة عدن</h1>
+      <img src="icon2.jpeg" alt="Logo Right" />
+    </header>
+
+    <h1 class="Fdata"> البيانات المطلوبة</h1>
+
+    <div class="FPersnolInfo">
+      <h2>البيانات الشخصية</h2>
+      <label for="fname">الأسم: </label>
+      <input type="text" id="fname" name="fname" />
+
+      <label for="fage">العمر: </label>
+      <input type="text" id="fage" name="fage" />
+
+      <label for="fcardNum">رقم البطاقة: </label>
+      <input type="text" id="fcardNum" name="fcardNum" />
+
+      <label for="fnati">الجنسية: </label>
+      <input type="text" id="fnati" name="fnati" />
+    </div>
+
+    <div class="FStudyInfo">
+      <h2>بيانات الدراسة</h2>
+      <label for="FgraduationYear">سنة التخرج:</label>
+      <input type="text" id="FgraduationYear" name="FgraduationYear" />
+
+      <label for="Favrage">المعدل:</label>
+      <input type="number" id="Favrage" name="Favrage" />
+
+      <label for="Fdepartment">القسم:</label>
+      <input type="text" id="Fdepartment" name="Fdepartment" />
+
+      <label for="FStudyPlace">مكان الدراسة:</label>
+      <input type="text" id="FStudyPlace" name="FStudyPlace" />
+    </div>
+
+    <div>
+      <h2>رغبات الدراسة</h2>
+      <label for="Ffirst">الرغبة الأولى:</label>
+      <input type="text" id="Ffirst" name="Ffirst" />
+
+      <label for="Fsecond">الرغبة الثانية:</label>
+      <input type="text" id="Fsecond" name="Fsecond" />
+    </div>
+  </body>
+
+  <footer>
+  <a href="#">يمكنك التعرف على التخصصات من هنا</a>
+  <button>أنقر</button>
+  </footer>
+    
+
+</html>
